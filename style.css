@@ -19,5 +19,14 @@ div {
 
 title{
 
-
 }
+a {
+  color: blue;
+  text-decoration: none; /* removes underline */
+  font-size: 20px;
+}
+
+a:hover {
+  text-decoration: underline; /* visible hover effect */
+}
+

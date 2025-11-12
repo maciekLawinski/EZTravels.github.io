@@ -24,7 +24,7 @@
 /*poland link */
 .poland,
 .Poland-page {
-  margin-top: 120px;
+  margin-top: 90px;
   text-align: center; 
 }
 /* Link styling */
@@ -37,6 +37,7 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
 
 
 

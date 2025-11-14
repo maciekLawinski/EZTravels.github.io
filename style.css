@@ -9,12 +9,12 @@
   color: white;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   font-size: 24px;
   z-index: 1000;
-  list-style-type: none;
+   list-style-type: none;
 }
- li1{
+   li1{
         float: left;
     }
     li1 a{
@@ -53,6 +53,7 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
 
 
 

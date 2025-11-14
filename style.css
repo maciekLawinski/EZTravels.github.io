@@ -20,6 +20,11 @@
   margin-top: 100px;
   text-align: center;
 }
+.Spain,
+.spain-page {
+  margin-top: 100px;
+  text-align: center;
+}
 
 /* Link styling */
 a {
@@ -31,4 +36,5 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
 

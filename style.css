@@ -14,7 +14,7 @@
   z-index: 1000;
    list-style-type: none;
 }
-   li1{
+   ul{
         float: left;
         text-align: center;
         padding: 16px;
@@ -51,6 +51,7 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
 
 
 

@@ -13,6 +13,14 @@
   font-size: 24px;
   z-index: 1000;
 }
+ li1{
+        float: left;
+    }
+    li1 a{
+        text-align: center;
+        padding: 16px;
+        color: white;
+    }
 
 /* Add spacing so content isn't hidden behind the fixed top bar */
 .Ireland,
@@ -44,6 +52,7 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
 
 
 

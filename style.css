@@ -55,8 +55,10 @@ a:hover {
     background-image: url("Spain_flag.jpg");
     background-repeat: no-repeat; 
     background-position: center; 
-    background-attachment: fixed; 
+    background-attachment: fixed;
+  background-size: cover;
 }
+
 
 
 

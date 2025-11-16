@@ -58,6 +58,14 @@ a:hover {
     background-attachment: fixed;
   background-size: cover;
 }
+.spain-page {
+  color: white;
+}
+.spain-page h1,
+.spain-page h2, {
+  color: black;
+}
+
 
 
 

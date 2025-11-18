@@ -35,14 +35,82 @@ body.home {
   margin-top: 100px;
   text-align: center;
 }
-.Poland {
-  margin-top: 100px;
-  text-align: center;
+.Poland{
+    margin-top: 90px;
+    text-align: center;
 }
+
+
 .Poland-page {
   margin-top: 90px;
   text-align: left;
+    .pol-flag {
+        background-image: url('poland-polsha-flag.webp');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        h1{
+            margin: 0;
+            padding: 10px;
+        }
+        padding: 60px 10px;
+        text-align: center;
+
+        image-rendering: auto;
+        background-repeat: no-repeat;
+    }
+
+
 }
+
+
+     .Poland-sob {
+        h1{
+            text-align: center;
+        }
+         text-align: center;
+         color: white;
+         background-color: black;
+         .palace {
+             height: auto;
+             width: 50%;
+             display: block;
+             margin:20px auto;
+
+         }
+     }
+
+
+.Poland-Destinations_Warsaw {
+    .war{
+        height:auto;
+        width: 50%;
+        display: block;
+        margin: 20px auto;
+    }
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+.Poland-zab{
+    background-color: black;
+    color: white;
+    text-align: center;
+
+    .Poland-z{
+        height: auto;
+        width: 50%;
+        display: block;
+        margin: 20px auto;
+    }
+}
+.Poland-Hotels{
+    h1,
+    h2 {
+        text-align: center;
+        text-emphasis: black;
+    }
+
 
 /* Link styling */
 a {
@@ -90,6 +158,7 @@ a:hover {
 .France-page h2 {
    color:black;
 }
+
 
 
 

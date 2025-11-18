@@ -127,7 +127,7 @@ a:hover {
 .France-page h2 {
    color:black;
 }
-/* Background for Spain Page */
+/* Background */
 .spain-page {
   background-image: url("folder/Spain_flag.jpg");
   background-size: cover;
@@ -144,7 +144,7 @@ a:hover {
   color: black;
 }
 
-/* Category headers (Hotels, Restaurants, Landmarks) */
+/* Category Titles */
 .category-title h1 {
   text-align: center;
   color: yellow;
@@ -152,7 +152,7 @@ a:hover {
   font-size: 36px;
 }
 
-/* Alternating sections */
+/* UNIVERSAL SECTION LAYOUT */
 .spain-section {
   display: flex;
   justify-content: space-between;
@@ -162,47 +162,56 @@ a:hover {
   border-bottom: 3px solid white;
 }
 
-/* Ordering */
-.left-text .text-col { order: 1; }
-.left-text .img-col { order: 2; }
-
-.right-text .img-col { order: 1; }
-.right-text .text-col { order: 2; }
-
-/* Columns */
+/* TEXT COLUMN */
 .text-col {
   width: 50%;
+  color: white;
 }
 
+/* IMAGE COLUMN */
 .img-col {
   width: 50%;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 12px;
   align-items: center;
 }
 
-/* Equal-size images */
+/* LANDMARK ONE IMAGE */
+.img-col.single {
+  justify-content: center;
+}
+
+/* RESTAURANT SMALL IMAGES (Option A) */
+.paragraph-image.small {
+  width: 95%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* UNIVERSAL IMAGE SIZE (Hotels + Landmarks) */
 .paragraph-image {
-  width: 100%;
-  aspect-ratio: 16/10;
+  width: 95%;
+  height: 250px;
   object-fit: cover;
   border-radius: 8px;
 }
 
-/* Landmarks: single image sections */
-.single-section {
-  text-align: center;
-  padding: 25px 0;
-  border-bottom: 3px solid white;
+/* LANDMARK LAYOUT = IMAGE LEFT */
+.img-left .img-col {
+  order: 1;
+}
+.img-left .text-col {
+  order: 2;
 }
 
-.single-image {
-  width: 70%;
-  aspect-ratio: 16/10;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-top: 15px;
+/* RESTAURANTS LAYOUT = WRITING LEFT, IMAGES RIGHT */
+.left-text .text-col {
+  order: 1;
+}
+.left-text .img-col {
+  order: 2;
 }
 
 /* Links */
@@ -211,28 +220,9 @@ a {
   color: yellow;
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: underline;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

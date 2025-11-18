@@ -1,6 +1,4 @@
-body.home {
-  background-color: #E2DFD2
-}
+
 /* Top bar across all pages */
 .top-bar {
   position: fixed;
@@ -122,41 +120,100 @@ a {
 a:hover {
   text-decoration: underline;
 }
-.spain-page {
-    background-image: url("../folder/Spain_flag.jpg");
-    background-repeat: no-repeat; 
-    background-position: center; 
-    background-attachment: fixed;
-  background-size: cover;
-}
-.spain-page {
-  color: white;
-}
-.spain-page h1,
-.spain-page h2 {
-  color: black;
-}
-.image-row {
-  display: flex;         
-  justify-content: center; 
-  gap: 15px;               
-  margin-top: 10px;        
-}
-
-/* Individual image styling */
-.paragraph-image {
-  max-width: 45%; 
-  height: auto;  
-  border-radius: 6px;
-}
-
-} 
 .France-page {
   colour:white;
 }
 .France-page h1 
 .France-page h2 {
    color:black;
+}
+/* Background for Spain Page */
+.spain-page {
+  background-image: url("folder/Spain_flag.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 48px;
+  color: black;
+}
+
+/* Category headers (Hotels, Restaurants, Landmarks) */
+.category-title h1 {
+  text-align: center;
+  color: yellow;
+  margin: 40px 0 20px;
+  font-size: 36px;
+}
+
+/* Alternating sections */
+.spain-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  padding: 25px 0;
+  border-bottom: 3px solid white;
+}
+
+/* Ordering */
+.left-text .text-col { order: 1; }
+.left-text .img-col { order: 2; }
+
+.right-text .img-col { order: 1; }
+.right-text .text-col { order: 2; }
+
+/* Columns */
+.text-col {
+  width: 50%;
+}
+
+.img-col {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+/* Equal-size images */
+.paragraph-image {
+  width: 100%;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Landmarks: single image sections */
+.single-section {
+  text-align: center;
+  padding: 25px 0;
+  border-bottom: 3px solid white;
+}
+
+.single-image {
+  width: 70%;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+/* Links */
+a {
+  font-size: 20px;
+  color: yellow;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 

@@ -107,13 +107,13 @@
 }
 
 .Poland-sob {
-   font-size: 1.1rem;
-         line-height: 1.8;
-         color: #555;
-         text-align: justify;
-         margin: 2rem auto;
-         padding: 1.5rem;
-         max-width: 1300px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  text-align: justify;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  max-width: 1300px;
   text-align: center;
   color: white;
   background-color: black;
@@ -621,5 +621,6 @@ font-size: 1.1rem;      /* slightly bigger text */
     height: auto;
     display: block;
 }
+
 
 

@@ -163,17 +163,10 @@ header .page-title {
 }
 
 .spain-section.hotel .img-col img {
-  width: 400px;
-  height: 250px;
+  width: 450px;   /* fixed width */
+  height: 300px;  /* fixed height */
   object-fit: cover;
   border-radius: 10px;
-}
-
-.category-title h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 30px;
-  color: white;
 }
 
 

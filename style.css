@@ -1,7 +1,6 @@
 /* =======================
    Top Bar Across All Pages
-======================= */
-/* Sticky top navigation bar */
+=======================/* Sticky top navigation bar */
 .navbar {
   position: sticky;
   top: 0;
@@ -13,6 +12,9 @@
   gap: 20px;
   padding: 15px 30px;
   z-index: 1000;
+
+  border: 2px solid #0f1f4d; /* NEW: Border around the nav */
+  box-sizing: border-box;
 }
 
 /* Navigation links */
@@ -24,11 +26,11 @@
 }
 
 .navbar a:hover {
-  background-color: #3b82f6; /* Lighter blue */
+  background-color: #3b82f6;
   border-radius: 4px;
 }
 
-/* Dropdown */
+/* Dropdown menu */
 .dropdown {
   position: relative;
 }
@@ -41,6 +43,8 @@
   border-radius: 4px;
   overflow: hidden;
   z-index: 1001;
+
+  border: 1px solid #0f1f4d; /* optional small border on dropdown */
 }
 
 .dropdown-content a {
@@ -495,14 +499,16 @@ font-size: 1.1rem;      /* slightly bigger text */
 /* Centered Country Box */
 .country-box {
     width: 600px;
-    margin: 50px auto;              /* CENTER THE BOX */
+    margin: 50px auto;
     padding: 30px;
     border: 2px solid #1e3a8a;
     border-radius: 10px;
+
+    background: #d9ecff;      /* NEW: Light blue background */
+    
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-    background: #f5faff;
 }
 
 /* Each Country Block */
@@ -512,25 +518,28 @@ font-size: 1.1rem;      /* slightly bigger text */
     color: black;
 }
 
-/* SVG Country Shapes */
-.country svg {
-    width: 180px;
-    height: 180px;
-    fill: #555;                     /* Default grey */
-    transition: fill 0.25s ease;
-}
+/* SVG shapes default: filled with flags */
+.flag-poland { fill: url(#flag-poland); }
+.flag-spain  { fill: url(#flag-spain); }
+.flag-italy  { fill: url(#flag-italy); }
+.flag-france { fill: url(#flag-france); }
 
-/* Hover turns red */
-.country:hover svg {
+/* Hover effect: country becomes red */
+.country:hover svg path {
     fill: red;
 }
 
-/* Country name label */
+/* SVG sizes */
+.country svg {
+    width: 180px;
+    height: 180px;
+    transition: 0.25s ease;
+}
+
+/* Country names */
 .country span {
-    margin-top: 8px;
+    margin-top: 10px;
     display: block;
     font-size: 18px;
     font-weight: bold;
 }
-
-

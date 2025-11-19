@@ -1,28 +1,63 @@
 /* =======================
    Top Bar Across All Pages
 ======================= */
-.top-bar {
-  position: fixed;
+./* Top navigation bar */
+.navbar {
+  position: sticky; /* Sticks to top on scroll */
   top: 0;
-  left: 0;
   width: 100%;
-  height: 60px;
-  background-color: grey;
-  color: white;
+  background-color: #333;
+  color: #fff;
   display: flex;
-  align-items: center;
-  justify-content: left;
-  font-size: 24px;
+  justify-content: flex-start;
+  padding: 15px 30px;
   z-index: 1000;
-  list-style-type: none;
 }
 
-ul {
-  float: left;
-  padding: 20px;
+.navbar a {
   color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  transition: background-color 0.3s;
 }
 
+.navbar a:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #444;
+  min-width: 160px;
+  top: 100%;
+  left: 0;
+  border-radius: 4px;
+  overflow: hidden;
+  z-index: 1001;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px 16px;
+}
+
+.dropdown-content a:hover {
+  background-color: #666;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 /* =======================
    Page Content Spacing
 ======================= */
@@ -458,3 +493,4 @@ font-size: 1.1rem;      /* slightly bigger text */
     overflow: visible;
   }
 }
+

@@ -140,20 +140,30 @@ header {
 header .page-title {
   font-size: 3rem;
   color: white;
-  text-shadow: 1px 1px 4px black;
-   /* Hotels section styling only */
+  text-shadow: 1px 1px 4px black; 
 }
-   /* Wrapper for all hotels */
+/* Wrapper with single border */
 .hotels-wrapper {
   max-width: 1200px;
   margin: 2rem auto;
-  padding: 1rem;
-  border: 2px solid #ccc;  /* single border around whole section */
+  padding: 1.5rem;
+  border: 2px solid #ccc;   /* single border */
   border-radius: 10px;
 }
 
-/* Hotels section inside the wrapper */
-.spain-section.hotel {
+/* Category title */
+.hotels-wrapper .category-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hotels-wrapper .category-title h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Hotels section */
+.hotels-wrapper .spain-section.hotel {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
@@ -161,25 +171,25 @@ header .page-title {
 }
 
 /* Text column */
-.spain-section.hotel .text-col {
+.hotels-wrapper .spain-section.hotel .text-col {
   flex: 1 1 300px;
   padding: 0 30px;       /* paragraph 30px from sides */
 }
 
-.spain-section.hotel .text-col h3 {
+.hotels-wrapper .spain-section.hotel .text-col h3 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
   color: #222;
 }
 
-.spain-section.hotel .text-col p {
+.hotels-wrapper .spain-section.hotel .text-col p {
   font-size: 1rem;
   line-height: 1.6;
   color: #555;
 }
 
 /* Image column */
-.spain-section.hotel .img-col {
+.hotels-wrapper .spain-section.hotel .img-col {
   flex: 1 1 300px;
   display: flex;
   flex-direction: column;
@@ -187,9 +197,8 @@ header .page-title {
   align-items: center;   /* center images */
 }
 
-.spain-section.hotel .img-col img {
-  width: 85%;          /* images 15% smaller */
-  max-width: 500px;
+.hotels-wrapper .spain-section.hotel .img-col img {
+  max-width: 85%;        /* 15% smaller images */
   height: auto;
   object-fit: cover;
   border-radius: 8px;
@@ -198,15 +207,15 @@ header .page-title {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .spain-section.hotel {
+  .hotels-wrapper .spain-section.hotel {
     flex-direction: column;
   }
 
-  .spain-section.hotel .text-col {
+  .hotels-wrapper .spain-section.hotel .text-col {
     padding: 0 20px;
   }
 
-  .spain-section.hotel .img-col img {
-    width: 100%;        /* full width on mobile */
+  .hotels-wrapper .spain-section.hotel .img-col img {
+    max-width: 100%;      /* full width on mobile */
   }
 }

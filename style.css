@@ -494,4 +494,41 @@ font-size: 1.1rem;      /* slightly bigger text */
   }
 }
 
+/* =======================
+   country box
+======================= */
+.country-box {
+    width: 500px;
+    padding: 20px;
+    border: 2px solid #1e3a8a;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    background: #f5faff;
+}
+
+.country {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.country svg {
+    width: 120px;
+    height: 120px;
+    fill: #555;            /* Default color */
+    transition: fill 0.25s ease;
+}
+
+.country:hover svg {
+    fill: red;             /* Hover color */
+}
+
+.country span {
+    margin-top: 8px;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+}
 

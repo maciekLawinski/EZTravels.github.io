@@ -98,7 +98,7 @@
    Poland Page Cleaned
 ======================= */
 .Poland-page .pol-flag {
-  background-image: url("folder/poland-polsha-flag.webp");
+  background-image: url('folder/poland-polsha-flag.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -551,3 +551,4 @@ font-size: 1.1rem;      /* slightly bigger text */
     height: auto;
     display: block;
 }
+

@@ -132,78 +132,68 @@ a:hover {
 ======================= */
 
 body.spain-page {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
   background-image: url("folder/Spain_flag.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  font-family: Arial, sans-serif;
   color: white;
-  margin: 0;
-  padding-top: 80px; /* spacing below top-bar */
 }
 
 h1, h2, h3 {
   margin: 10px 0;
 }
 
-.category-title, .category h2 {
-  text-align: center;
-  margin: 40px 0 20px;
-  font-size: 2rem;
-}
-
-/* =======================
-   Section Layouts
-======================= */
+/* Section layout */
 .spain-section {
   display: flex;
   gap: 20px;
-  flex-wrap: wrap;
   margin-bottom: 40px;
-  padding-bottom: 20px;
+  flex-wrap: wrap;
   border-bottom: 1px solid white;
+  padding-bottom: 20px;
 }
 
-/* Hotels: stacked layout, images under text, centered */
+/* Hotels: images below text, centered */
 .hotel {
   flex-direction: column;
   text-align: center;
   align-items: center;
 }
 
-.hotel .text-col {
-  width: 100%;
-}
-
 .hotel .img-col {
-  margin-top: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
 .hotel .img-col img {
-  display: block;
-  margin: 10px auto;
   width: 90%;
   max-width: 400px;
   height: auto;
   border-radius: 10px;
 }
 
-/* Restaurants: text left, images right */
+/* Restaurants: side-by-side */
 .restaurant {
   flex-direction: row;
   text-align: left;
   align-items: flex-start;
 }
 
-.restaurant .text-col,
 .restaurant .img-col {
   flex: 1 1 50%;
-  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .restaurant .img-col img {
   width: 100%;
-  max-width: 400px;
   height: auto;
   border-radius: 10px;
 }
@@ -211,55 +201,35 @@ h1, h2, h3 {
 /* Landmarks: image left, text right */
 .landmark {
   flex-direction: row;
-  text-align: left;
   align-items: flex-start;
 }
 
-.landmark .text-col,
 .landmark .img-col {
   flex: 1 1 50%;
-  min-width: 250px;
 }
 
 .landmark .img-col img {
   width: 100%;
-  max-width: 400px;
   height: auto;
   border-radius: 10px;
 }
 
-/* =======================
-   Links
-======================= */
-a {
-  color: yellow;
-  text-decoration: none;
-  font-size: 18px;
+.landmark .text-col {
+  flex: 1 1 50%;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
-/* =======================
-   Responsive
-======================= */
+/* Responsive */
 @media (max-width: 768px) {
   .spain-section {
     flex-direction: column;
     text-align: center;
   }
 
-  .restaurant .text-col,
-  .restaurant .img-col,
-  .landmark .text-col,
-  .landmark .img-col {
+  .text-col, .img-col {
     width: 100%;
   }
 
-  .restaurant .img-col img,
-  .landmark .img-col img {
-    margin: 10px auto;
-    height: auto;
+  .img-col img {
+    max-width: 90%;
   }
 }

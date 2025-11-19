@@ -384,6 +384,77 @@ font-size: 1.1rem;      /* slightly bigger text */
   }
 }
 
+/* Wrapper with border around Landmarks section */
+.landmarks-wrapper {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border: 2px solid #888; /* single border */
+  border-radius: 10px;
+}
 
+/* Category title */
+.landmarks-wrapper .category-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
 
+.landmarks-wrapper .category-title h2 {
+  font-size: 2rem;
+  color: #333;
+}
 
+/* Landmark content: float images left */
+.spain-section.landmark {
+  margin-bottom: 2rem;
+}
+
+.spain-section.landmark .landmark-content {
+  position: relative;
+}
+
+.spain-section.landmark .landmark-content .img-col {
+  float: left;
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.spain-section.landmark .landmark-content .img-col img {
+  width: 300px; /* fixed size */
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Paragraph wraps around images */
+.spain-section.landmark .landmark-content p {
+  font-size: 1.1rem;      /* slightly bigger text */
+  line-height: 1.8;       /* more spacing */
+  color: #555;
+  text-align: justify;
+  overflow: hidden;       /* ensures text wraps around floated images */
+}
+
+/* Clear floats after each landmark section */
+.spain-section.landmark::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .spain-section.landmark .landmark-content .img-col {
+    float: none;
+    margin: 0 auto 1rem;
+    align-items: center;
+  }
+
+  .spain-section.landmark .landmark-content p {
+    text-align: center;
+    overflow: visible;
+  }
+}

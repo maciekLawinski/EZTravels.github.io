@@ -143,22 +143,27 @@ header .page-title {
   text-shadow: 1px 1px 4px black;
    /* Hotels section styling only */
 }
-   
-   .spain-section.hotel {
-  display: flex;
-  flex-wrap: wrap;       /* allows stacking on smaller screens */
-  gap: 1.5rem;
-  margin: 2rem auto;
+   /* Wrapper for all hotels */
+.hotels-wrapper {
   max-width: 1200px;
+  margin: 2rem auto;
   padding: 1rem;
-  border: 2px solid #ccc;   /* 1. Border around section */
-  border-radius: 10px;       /* optional: rounded corners */
+  border: 2px solid #ccc;  /* single border around whole section */
+  border-radius: 10px;
+}
+
+/* Hotels section inside the wrapper */
+.spain-section.hotel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 2rem 0;
 }
 
 /* Text column */
 .spain-section.hotel .text-col {
   flex: 1 1 300px;
-  padding: 0 30px;          /* 2. Paragraph 30px from each side */
+  padding: 0 30px;       /* paragraph 30px from sides */
 }
 
 .spain-section.hotel .text-col h3 {
@@ -179,16 +184,16 @@ header .page-title {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  align-items: center;   /* center images */
 }
 
 .spain-section.hotel .img-col img {
-  width: 100%;        /* 3. Ensures images scale nicely */
-  max-width: 500px;   /* Optional: prevents huge images */
+  width: 85%;          /* images 15% smaller */
+  max-width: 500px;
   height: auto;
-  object-fit: cover;  /* ensures good cropping */
+  object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  align-self: center; /* center image in column if narrower */
 }
 
 /* Responsive adjustments */
@@ -196,8 +201,12 @@ header .page-title {
   .spain-section.hotel {
     flex-direction: column;
   }
-  
+
   .spain-section.hotel .text-col {
-    padding: 0 20px;   /* slightly smaller padding on mobile */
+    padding: 0 20px;
+  }
+
+  .spain-section.hotel .img-col img {
+    width: 100%;        /* full width on mobile */
   }
 }

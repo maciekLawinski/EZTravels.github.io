@@ -201,7 +201,10 @@
      border-radius: 10px;
      flex: 1 1 300px;
      padding: 0 30px;
-    h3{
+   h2 {
+      font-size: 2rem;
+   }
+    h3 {
         text-align: right;
        font-size: 1.5rem;
     }
@@ -621,6 +624,7 @@ font-size: 1.1rem;      /* slightly bigger text */
     height: auto;
     display: block;
 }
+
 
 
 

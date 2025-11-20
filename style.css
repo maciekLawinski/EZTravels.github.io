@@ -202,12 +202,12 @@
      flex: 1 1 300px;
      padding: 0 30px;
     h3{
-        text-align: center
+        text-align: right;
+       font-size: 1.5rem;
     }
-     p,
-     h3 {
-         font-size: 1.1rem;   /* bigger text */
-         line-height: 1.8;    /* more spacing */
+     p {
+         font-size: 1.1rem;   
+         line-height: 1.8;    
          color: white;
          text-align: right;
      }
@@ -621,6 +621,7 @@ font-size: 1.1rem;      /* slightly bigger text */
     height: auto;
     display: block;
 }
+
 
 
 

@@ -627,21 +627,20 @@ font-size: 1.1rem;      /* slightly bigger text */
 
 /*BIO*/
 .bio {
-   .in-bio {
-      width: 600px;
+    width: 600px;
         margin: 50px auto;
         padding: 30px;
         border: 2px solid #1e3a8a;
         border-radius: 10px;
         background: #d9ecff;
         display: center;
-
         gap: 30px;
         p, h2 {
         text-align: center;
     }
     }
 }
+
 
 
 

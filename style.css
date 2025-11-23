@@ -1,23 +1,19 @@
-/* =======================
-   Top Bar Across All Pages
-=======================/* Sticky top navigation bar */
+/* Top Bar Across All Pages */
 .navbar {
   position: sticky;
   top: 0;
   width: 100%;
-  background-color: #1e3a8a; /* Blue */
+  background-color: #1e3a8a;
   color: #fff;
   display: flex;
   align-items: center;
   gap: 20px;
   padding: 15px 30px;
   z-index: 1000;
-
-  border: 2px solid #0f1f4d; /* NEW: Border around the nav */
+  border: 2px solid #0f1f4d;
   box-sizing: border-box;
 }
 
-/* Navigation links */
 .navbar a {
   color: white;
   text-decoration: none;
@@ -30,7 +26,6 @@
   border-radius: 4px;
 }
 
-/* Dropdown menu */
 .dropdown {
   position: relative;
 }
@@ -43,8 +38,7 @@
   border-radius: 4px;
   overflow: hidden;
   z-index: 1001;
-
-  border: 1px solid #0f1f4d; /* optional small border on dropdown */
+  border: 1px solid #0f1f4d;
 }
 
 .dropdown-content a {
@@ -56,13 +50,11 @@
   background-color: #3b82f6;
 }
 
-/* Show dropdown on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
-/* =======================
-   Page Content Spacing
-======================= */
+
+/* Page Content Spacing */
 .Ireland,
 .ireland-page {
   margin-top: 100px;
@@ -94,9 +86,7 @@
   color: black;
 }
 
-/* =======================
-   Poland Page Cleaned
-======================= */
+/* Poland Page */
 .Poland-page .pol-flag {
   background-image: url('folder/poland-polsha-flag.webp');
   background-size: cover;
@@ -109,13 +99,11 @@
 .Poland-sob {
   font-size: 1.1rem;
   line-height: 1.8;
-  color: #555;
-  text-align: justify;
+  color: white;
+  text-align: center;
   margin: 2rem auto;
   padding: 1.5rem;
   max-width: 1300px;
-  text-align: center;
-  color: white;
   background-color: black;
 }
 
@@ -127,15 +115,13 @@
 }
 
 .Poland-Destinations_Warsaw {
-   font-size: 1.1rem;
-    line-height: 1.8;
-    color: #555;
-    text-align: justify;
-    margin: 2rem auto;
-    padding: 1.5rem;
-    max-width: 1300px;
-  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.8;
   color: white;
+  text-align: center;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  max-width: 1300px;
   background-color: black;
 }
 
@@ -147,16 +133,14 @@
 }
 
 .Poland-zab {
-   font-size: 1.1rem;
-    line-height: 1.8;
-    color: #555;
-    text-align: justify;
-    margin: 2rem auto;
-    padding: 1.5rem;
-    max-width: 1300px;
-  background-color: black;
+  font-size: 1.1rem;
+  line-height: 1.8;
   color: white;
   text-align: center;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  max-width: 1300px;
+  background-color: black;
 }
 
 .Poland-zab .Poland-z {
@@ -168,65 +152,62 @@
 
 .Poland-Hotels {
   font-size: 1.1rem;
-    line-height: 1.8;
-    color: #555;
-    text-align: justify;
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 1.5rem;
-    border: 2px solid #888;
-    border-radius: 10px;
-    h1,
-    h2 {
-        text-align: center;
-        text-emphasis: black;
-    }
-    margin: 2rem auto;
-    padding: 1.5rem;
-    max-width: 1300px;
-    background-color: black;
-    color: white;
+  line-height: 1.8;
+  color: white;
+  text-align: justify;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border: 2px solid #888;
+  border-radius: 10px;
+  background-color: black;
 }
 
-.Poland-Restaurants{
-     text-align: center;
-     line-height: 1.8;
+.Poland-Hotels h1,
+.Poland-Hotels h2 {
+  text-align: center;
+}
 
-     color: white;
-     background-color: black;
-     max-width: 1200px;
-     margin: 2rem auto;
-     padding: 1.5rem;
-     border: 2px solid #888;
-     border-radius: 10px;
-     flex: 1 1 300px;
-     padding: 0 30px;
-   h2 {
-      font-size: 2rem;
-   }
-    h3 {
-        text-align: right;
-       font-size: 1.5rem;
-    }
-     p {
-         font-size: 1.1rem;   
-         line-height: 1.8;    
-         color: white;
-         text-align: right;
-     }
- }
+.Poland-Restaurants {
+  text-align: center;
+  line-height: 1.8;
+  color: white;
+  background-color: black;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border: 2px solid #888;
+  border-radius: 10px;
+  flex: 1 1 300px;
+  padding: 0 30px;
+}
+
+.Poland-Restaurants h2 {
+  font-size: 2rem;
+}
+
+.Poland-Restaurants h3 {
+  text-align: right;
+  font-size: 1.5rem;
+}
+
+.Poland-Restaurants p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: white;
+  text-align: right;
+}
+
 .stol {
-    width: 60%;
-    height: 40%;
-    flex-shrink: 0;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  width: 60%;
+  height: 40%;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-/* =======================
-   Links
-======================= */
+/* Links */
 a {
   color: yellow;
   text-decoration: none;
@@ -237,10 +218,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* =======================
-   SPAIN PAGE STYLES
-======================= */
-
+/* Spain Page */
 header {
   text-align: center;
   margin-top: 20px;
@@ -250,18 +228,17 @@ header {
 header .page-title {
   font-size: 3rem;
   color: white;
-  text-shadow: 1px 1px 4px black; 
+  text-shadow: 1px 1px 4px black;
 }
-/* Wrapper with single border around all hotels */
+
 .hotels-wrapper {
   max-width: 1200px;
   margin: 2rem auto;
   padding: 1.5rem;
-  border: 2px solid #ccc;   /* single border */
+  border: 2px solid #ccc;
   border-radius: 10px;
 }
 
-/* Category title */
 .hotels-wrapper .category-title {
   text-align: center;
   margin-bottom: 2rem;
@@ -272,7 +249,6 @@ header .page-title {
   color: #333;
 }
 
-/* Hotels section */
 .hotels-wrapper .spain-section.hotel {
   display: flex;
   flex-wrap: wrap;
@@ -280,10 +256,9 @@ header .page-title {
   margin: 2rem 0;
 }
 
-/* Text column */
 .hotels-wrapper .spain-section.hotel .text-col {
   flex: 1 1 300px;
-  padding: 0 30px;          /* paragraph 30px from sides */
+  padding: 0 30px;
 }
 
 .hotels-wrapper .spain-section.hotel .text-col h3 {
@@ -293,55 +268,51 @@ header .page-title {
 }
 
 .hotels-wrapper .spain-section.hotel .text-col p {
-  font-size: 1.1rem;   /* bigger text */
-  line-height: 1.8;    /* more spacing */
+  font-size: 1.1rem;
+  line-height: 1.8;
   color: #555;
   text-align: justify;
 }
 
-/* Image column */
 .hotels-wrapper .spain-section.hotel .img-col {
   flex: 1 1 300px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  align-items: center;      /* center images */
+  align-items: center;
 }
 
 .hotels-wrapper .spain-section.hotel .img-col img {
-  width: 300px;             /* fixed width */
-  height: 200px;            /* fixed height */
-  flex-shrink: 0;           /* prevent shrinking in flex container */
-  object-fit: cover;        /* crop to fill box nicely */
+  width: 300px;
+  height: 200px;
+  flex-shrink: 0;
+  object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-/* Responsive adjustments for mobile */
 @media (max-width: 768px) {
   .hotels-wrapper .spain-section.hotel {
     flex-direction: column;
   }
-
   .hotels-wrapper .spain-section.hotel .text-col {
-    padding: 0 20px;        /* slightly smaller padding on mobile */
+    padding: 0 20px;
   }
-
   .hotels-wrapper .spain-section.hotel .img-col img {
-    width: 100%;            /* scale images to column width */
-    height: auto;           /* maintain aspect ratio on small screens */
+    width: 100%;
+    height: auto;
   }
 }
-/* Wrapper with border */
+
+/* Restaurants Page */
 .restaurants-wrapper {
   max-width: 1200px;
   margin: 2rem auto;
   padding: 1.5rem;
-  border: 2px solid #888; /* single border */
+  border: 2px solid #888;
   border-radius: 10px;
 }
 
-/* Category title */
 .restaurants-wrapper .category-title {
   text-align: center;
   margin-bottom: 2rem;
@@ -352,7 +323,6 @@ header .page-title {
   color: #333;
 }
 
-/* Restaurant section */
 .spain-section.restaurant {
   margin-bottom: 2rem;
   padding: 1rem;
@@ -363,7 +333,6 @@ header .page-title {
   border-bottom: none;
 }
 
-/* Text wrapping with floated images */
 .spain-section.restaurant .restaurant-content {
   position: relative;
 }
@@ -385,42 +354,39 @@ header .page-title {
 }
 
 .spain-section.restaurant .restaurant-content p {
-font-size: 1.1rem;      /* slightly bigger text */
-  line-height: 1.8;       /* more spacing for readability */
+  font-size: 1.1rem;
+  line-height: 1.8;
   color: #555;
-  text-align: justify;    /* keeps clean block look */
+  text-align: justify;
   overflow: hidden;
 }
 
-/* Clear floats */
 .spain-section.restaurant::after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .spain-section.restaurant .restaurant-content .img-col {
     float: none;
     margin: 0 auto 1rem;
     align-items: center;
   }
-
   .spain-section.restaurant .restaurant-content p {
     overflow: visible;
   }
 }
-/* Wrapper with border around Landmarks section */
+
+/* Landmarks Page */
 .landmarks-wrapper {
   max-width: 1200px;
   margin: 2rem auto;
   padding: 1.5rem;
-  border: 2px solid #888; /* single border */
+  border: 2px solid #888;
   border-radius: 10px;
 }
 
-/* Category title */
 .landmarks-wrapper .category-title {
   text-align: center;
   margin-bottom: 2rem;
@@ -431,90 +397,6 @@ font-size: 1.1rem;      /* slightly bigger text */
   color: #333;
 }
 
-/* Landmark container: images left, text right */
-.landmarks-wrapper .spain-section.landmark .landmark-container {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap; /* stacks on mobile */
-  margin-bottom: 2rem;
-  align-items: flex-start;
-}
-
-/* Image column */
-.landmarks-wrapper .landmark-container .img-col {
-  flex: 1 1 50%;
-  max-width: 50%;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  align-items: flex-start; /* images on left */
-}
-
-.landmarks-wrapper .landmark-container .img-col img {
-  width: 300px; /* fixed size */
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
-/* Text column */
-.landmarks-wrapper .landmark-container .text-col {
-  flex: 1 1 50%;
-  max-width: 50%;
-}
-
-.landmarks-wrapper .landmark-container .text-col h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.landmarks-wrapper .landmark-container .text-col p {
-  font-size: 1.1rem;      /* slightly bigger text */
-  line-height: 1.8;       /* more spacing */
-  color: #555;
-  text-align: justify;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .landmarks-wrapper .landmark-container {
-    flex-direction: column;
-  }
-
-  .landmarks-wrapper .landmark-container .img-col,
-  .landmarks-wrapper .landmark-container .text-col {
-    flex: 1 1 100%;
-    max-width: 100%;
-    align-items: center;
-  }
-
-  .landmarks-wrapper .landmark-container .text-col p {
-    text-align: center;
-  }
-}
-
-/* Wrapper with border around Landmarks section */
-.landmarks-wrapper {
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 1.5rem;
-  border: 2px solid #888; /* single border */
-  border-radius: 10px;
-}
-
-/* Category title */
-.landmarks-wrapper .category-title {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.landmarks-wrapper .category-title h2 {
-  font-size: 2rem;
-  color: #333;
-}
-
-/* Landmark content: float images left */
 .spain-section.landmark {
   margin-bottom: 2rem;
 }
@@ -532,37 +414,33 @@ font-size: 1.1rem;      /* slightly bigger text */
 }
 
 .spain-section.landmark .landmark-content .img-col img {
-  width: 300px; /* fixed size */
+  width: 300px;
   height: 200px;
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-/* Paragraph wraps around images */
 .spain-section.landmark .landmark-content p {
-  font-size: 1.1rem;      /* slightly bigger text */
-  line-height: 1.8;       /* more spacing */
+  font-size: 1.1rem;
+  line-height: 1.8;
   color: #555;
   text-align: justify;
-  overflow: hidden;       /* ensures text wraps around floated images */
+  overflow: hidden;
 }
 
-/* Clear floats after each landmark section */
 .spain-section.landmark::after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .spain-section.landmark .landmark-content .img-col {
     float: none;
     margin: 0 auto 1rem;
     align-items: center;
   }
-
   .spain-section.landmark .landmark-content p {
     text-align: center;
     overflow: visible;
@@ -571,83 +449,68 @@ font-size: 1.1rem;      /* slightly bigger text */
 
 /* Centered Country Box */
 .country-box {
+  width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 2px solid #1e3a8a;
+  border-radius: 10px;
+  background: #d9ecff;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.country {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.country:hover svg circle {
+  fill: red;
+}
+
+.country svg {
+  width: 150px;
+  height: 150px;
+  transition: 0.3s ease;
+}
+
+.country span {
+  margin-top: 10px;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.video-container {
+  max-width: 700px;
+  margin: 30px auto;
+  text-align: center;
+  border: 2px solid #1e3a8a;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.bio {
+  .in-bio {
     width: 600px;
     margin: 50px auto;
     padding: 30px;
     border: 2px solid #1e3a8a;
     border-radius: 10px;
     background: #d9ecff;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: center;
     gap: 30px;
-}
-
-/* Each Country Block */
-.country {
-    text-align: center;
-    text-decoration: none;
-    color: black;
-}
-
-/* Hover effect: circle turns red */
-.country:hover svg circle {
-    fill: red;
-}
-
-/* SVG sizes */
-.country svg {
-    width: 150px;
-    height: 150px;
-    transition: 0.3s ease;
-}
-
-/* Country names */
-.country span {
-    margin-top: 10px;
-    display: block;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-/* Centered Country Box */
-.video-container {
-    max-width: 700px;
-    margin: 30px auto;  /* centers the video */
-    text-align: center;
-    border: 2px solid #1e3a8a;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.video-container video {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-/*BIO*/
-.bio {
-   .in-bio {
-    width: 600px;
-        margin: 50px auto;
-        padding: 30px;
-        border: 2px solid #1e3a8a;
-        border-radius: 10px;
-        background: #d9ecff;
-        display: center;
-        gap: 30px;
-        p, h2 {
-         font-size: 1..4rem;
-        text-align: center;
+    p, h2 {
+      font-size: 1..4rem;
+      text-align: center;
     }
-    }
+  }
 }
-
-
-
-
-
-
-
-
-
